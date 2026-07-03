@@ -231,6 +231,7 @@ function initProjectFilter() {
 const projectData = {
   zyntrix: {
     permalink: 'https://www.behance.net/gallery/247238973/GRAPHIC-DESIGN-PORTFOLIO-2026/modules/1442208009',
+    poster: 'assets/project-posters/zyntrix.webp',
     title: 'ZYNTRIX — Brand Identity Design',
     cat: 'Brand Identity · 2026',
     accentColor: '#E5E5E5',
@@ -267,6 +268,7 @@ const projectData = {
   },
   vektor: {
     permalink: 'https://www.behance.net/gallery/247238973/GRAPHIC-DESIGN-PORTFOLIO-2026/modules/1442207973',
+    poster: 'assets/project-posters/vektor.webp',
     title: 'Vektor Core — Digital Brand Identity',
     cat: 'Brand Identity · 2026',
     accentColor: '#FF6B00',
@@ -285,6 +287,7 @@ const projectData = {
   },
   peanuts: {
     permalink: 'https://www.behance.net/gallery/247238973/GRAPHIC-DESIGN-PORTFOLIO-2026/modules/1442207977',
+    poster: 'assets/project-posters/peanuts.webp',
     title: 'Spicy Masala Peanuts — Packaging Design',
     cat: 'Packaging Design · 2026',
     accentColor: '#F63255',
@@ -304,6 +307,7 @@ const projectData = {
   },
   porsche: {
     permalink: 'https://www.behance.net/gallery/247238973/GRAPHIC-DESIGN-PORTFOLIO-2026/modules/1442207999',
+    poster: 'assets/project-posters/porsche.webp',
     title: 'Porsche — Social Media Campaign',
     cat: 'Social Media Design · 2026',
     accentColor: '#C89B00',
@@ -323,6 +327,7 @@ const projectData = {
   },
   soundx: {
     permalink: 'https://www.behance.net/gallery/247238973/GRAPHIC-DESIGN-PORTFOLIO-2026/modules/1442207991',
+    poster: 'assets/project-posters/soundx.webp',
     title: 'SoundX — Wireless Headphones Carousel',
     cat: 'Social Media Design · 2026',
     accentColor: '#FF1E1E',
@@ -343,6 +348,7 @@ const projectData = {
   },
   glownest: {
     permalink: 'https://www.behance.net/gallery/247238973/GRAPHIC-DESIGN-PORTFOLIO-2026/modules/1442207979',
+    poster: 'assets/project-posters/glownest.webp',
     title: 'GlowNest Organics — Vitamin C Serum',
     cat: 'Social Media Design · 2026',
     accentColor: '#D4AF3F',
@@ -363,6 +369,7 @@ const projectData = {
   },
   munchies: {
     permalink: 'https://www.behance.net/gallery/247238973/GRAPHIC-DESIGN-PORTFOLIO-2026/modules/1442207987',
+    poster: 'assets/project-posters/munchies.webp',
     title: 'Munch Munchies Elite — Packaging',
     cat: 'Packaging Design · 2026',
     accentColor: '#C9A84C',
@@ -383,6 +390,7 @@ const projectData = {
   },
   guitarist: {
     permalink: 'https://www.behance.net/gallery/247238973/GRAPHIC-DESIGN-PORTFOLIO-2026/modules/1442207989',
+    poster: 'assets/project-posters/guitarist.webp',
     title: 'The Guitarist — Character Design',
     cat: 'Illustration & Character Design · 2026',
     accentColor: '#F2601A',
@@ -426,9 +434,9 @@ function initProjectModal() {
       <h2 id="modalTitle">${data.title}</h2>
       <span class="modal-cat">${data.cat}</span>
       <div class="modal__visual" style="background:${data.bg};">
-        <div style="text-align:center; color:${data.accentColor}; font-family:'Bebas Neue',sans-serif; font-size:2.5rem; letter-spacing:4px; opacity:0.5;">
-          ${data.title.split('—')[0].trim()}
-        </div>
+        ${data.poster
+          ? `<img src="${data.poster}" alt="${data.title}" loading="lazy" style="width:100%;height:100%;object-fit:contain;display:block;">`
+          : `<div style="text-align:center; color:${data.accentColor}; font-family:'Bebas Neue',sans-serif; font-size:2.5rem; letter-spacing:4px; opacity:0.5;">${data.title.split('—')[0].trim()}</div>`}
       </div>
       <div class="modal__body">
         <div class="modal__desc">
