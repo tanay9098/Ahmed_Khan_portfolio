@@ -1,6 +1,6 @@
 # Ahmed Khan — Graphic Designer Portfolio
 
-A premium, production-ready portfolio website for Ahmed Khan, a UAE-based graphic designer specialising in brand identity, marketing collateral, and visual communications.
+A premium, production-ready portfolio website for Ahmed Khan, a graphic designer specialising in brand identity, marketing collateral, and visual communications.
 
 ## Features
 
