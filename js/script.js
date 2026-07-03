@@ -109,7 +109,13 @@ function initNav() {
 
   function openMenu() {
     toggle.classList.add('open');
-    mobileMenu.classList.add('open');
+    // Set display:flex first, then add .open on next frame so transition fires
+    mobileMenu.style.display = 'flex';
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        mobileMenu.classList.add('open');
+      });
+    });
     mobileMenu.setAttribute('aria-hidden', 'false');
     toggle.setAttribute('aria-expanded', 'true');
     document.body.style.overflow = 'hidden';
@@ -121,6 +127,12 @@ function initNav() {
     mobileMenu.setAttribute('aria-hidden', 'true');
     toggle.setAttribute('aria-expanded', 'false');
     document.body.style.overflow = '';
+    // Hide after transition ends
+    mobileMenu.addEventListener('transitionend', () => {
+      if (!mobileMenu.classList.contains('open')) {
+        mobileMenu.style.display = '';
+      }
+    }, { once: true });
   }
 
   toggle.addEventListener('click', () => {
