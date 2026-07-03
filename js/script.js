@@ -249,7 +249,8 @@ const projectData = {
     },
   },
   gryd: {
-    permalink: 'https://www.behance.net/gallery/247238973/GRAPHIC-DESIGN-PORTFOLIO-2026',
+    permalink: 'https://www.behance.net/gallery/247238973/GRAPHIC-DESIGN-PORTFOLIO-2026/modules/1442207993',
+    poster: 'assets/project-posters/gryd.webp',
     title: 'GRYD — Tech Brand Identity',
     cat: 'Brand Identity · 2026',
     accentColor: '#C81F2A',
