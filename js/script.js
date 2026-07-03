@@ -518,18 +518,35 @@ function initContactForm() {
     btnText.textContent = 'Sending…';
     submitBtn.classList.add('btn--loading');
 
-    // Replace with real endpoint (Formspree / EmailJS)
-    await new Promise((r) => setTimeout(r, 1800));
+    try {
+      const data = new FormData(form);
+      const res  = await fetch('https://formspree.io/f/xojopoey', {
+        method:  'POST',
+        body:    data,
+        headers: { 'Accept': 'application/json' },
+      });
 
-    btnText.textContent = 'Message Sent ✓';
-    submitBtn.style.background = '#2d6a2d';
-    form.reset();
-
-    setTimeout(() => {
-      btnText.textContent = 'Send Message';
-      submitBtn.style.background = '';
+      if (res.ok) {
+        btnText.textContent = 'Message Sent ✓';
+        submitBtn.style.background = '#2d6a2d';
+        form.reset();
+        setTimeout(() => {
+          btnText.textContent = 'Send Message';
+          submitBtn.style.background = '';
+          submitBtn.classList.remove('btn--loading');
+        }, 4000);
+      } else {
+        throw new Error('Server error');
+      }
+    } catch {
+      btnText.textContent = 'Failed — Try Again';
+      submitBtn.style.background = '#8b2c2c';
       submitBtn.classList.remove('btn--loading');
-    }, 4000);
+      setTimeout(() => {
+        btnText.textContent = 'Send Message';
+        submitBtn.style.background = '';
+      }, 4000);
+    }
   });
 }
 
