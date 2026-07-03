@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- SEO Meta Tags -->
+  <title>Ahmed Khan — Graphic Designer & Visual Branding Expert</title>
+  <meta name="description" content="Ahmed Khan is a UAE-based graphic designer specializing in brand identity, marketing collateral, and visual communications that convert." />
+  <meta name="keywords" content="graphic designer, brand identity, Dubai designer, marketing design, visual communication, logo design, flyer design" />
+  <meta name="author" content="Ahmed Khan" />
+  <link rel="canonical" href="https://ahmedkhan.design/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ahmedkhan.design/" />
+  <meta property="og:title" content="Ahmed Khan — Graphic Designer & Visual Branding Expert" />
+  <meta property="og:description" content="UAE-based graphic designer creating bold, premium brand identities and marketing materials that make an impact." />
+  <meta property="og:image" content="assets/images/og-cover.jpg" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Ahmed Khan — Graphic Designer" />
+  <meta name="twitter:description" content="Bold brand identities and marketing collateral from a UAE-based creative." />
+  <meta name="twitter:image" content="assets/images/og-cover.jpg" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+
+  <!-- Preconnect for fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Inter:wght@300;400;500;600&family=Bebas+Neue&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ahmed Khan",
+    "jobTitle": "Graphic Designer",
+    "description": "UAE-based graphic designer specializing in brand identity, marketing collateral, and visual communications.",
+    "url": "https://ahmedkhan.design/",
+    "sameAs": [
+      "https://www.behance.net/ahmedkhandesign"
+    ],
+    "knowsAbout": ["Brand Identity", "Graphic Design", "Marketing Design", "Typography", "Visual Communication"]
+  }
+  </script>
+</head>
+
+<body>
+  <!-- ═══════════════════════════════════════ LOADER ═══ -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__inner">
+      <span class="loader__letter">A</span>
+      <span class="loader__letter">K</span>
+    </div>
+    <div class="loader__bar"></div>
+  </div>
+
+  <!-- ═══════════════════════════════════════ CURSOR ═══ -->
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+  <div class="cursor-follower" id="cursorFollower" aria-hidden="true"></div>
+
+  <!-- ═══════════════════════════════════════ NAVIGATION ═══ -->
+  <header class="nav" id="nav" role="banner">
+    <div class="nav__container">
+      <a href="#hero" class="nav__logo" aria-label="Ahmed Khan — Home">
+        <span class="nav__logo-text">AK</span>
+      </a>
+
+      <nav class="nav__menu" role="navigation" aria-label="Primary navigation">
+        <ul class="nav__list">
+          <li><a href="#about" class="nav__link">About</a></li>
+          <li><a href="#work" class="nav__link">Work</a></li>
+          <li><a href="#services" class="nav__link">Services</a></li>
+          <li><a href="#process" class="nav__link">Process</a></li>
+          <li><a href="#contact" class="nav__link nav__link--cta">Let's Talk</a></li>
+        </ul>
+      </nav>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+      <ul class="mobile-menu__list">
+        <li><a href="#about" class="mobile-menu__link">About</a></li>
+        <li><a href="#work" class="mobile-menu__link">Work</a></li>
+        <li><a href="#services" class="mobile-menu__link">Services</a></li>
+        <li><a href="#process" class="mobile-menu__link">Process</a></li>
+        <li><a href="#contact" class="mobile-menu__link">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <!-- ═══════════════════════════════════════ HERO ═══ -->
+    <section class="hero" id="hero" aria-label="Introduction">
+      <div class="hero__bg-grid" aria-hidden="true"></div>
+      <div class="hero__noise" aria-hidden="true"></div>
+
+      <div class="hero__container">
+        <div class="hero__eyebrow reveal-up">
+          <span class="hero__dot"></span>
+          <span>Available for Projects — UAE & Worldwide</span>
+        </div>
+
+        <h1 class="hero__headline">
+          <span class="hero__line reveal-up delay-1">Crafting</span>
+          <span class="hero__line hero__line--accent reveal-up delay-2">Visual</span>
+          <span class="hero__line reveal-up delay-3">Identities</span>
+        </h1>
+
+        <p class="hero__sub reveal-up delay-4">
+          Graphic designer specializing in brand identities, marketing collateral,
+          and visual narratives that demand attention and drive results.
+        </p>
+
+        <div class="hero__actions reveal-up delay-5">
+          <a href="#work" class="btn btn--primary">
+            <span>View Portfolio</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M3 8h10M8 3l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <a href="#contact" class="btn btn--ghost">Start a Project</a>
+        </div>
+
+        <div class="hero__stats reveal-up delay-6">
+          <div class="hero__stat">
+            <span class="hero__stat-num" data-target="5">0</span><span class="hero__stat-num">+</span>
+            <span class="hero__stat-label">Years Experience</span>
+          </div>
+          <div class="hero__stat-divider" aria-hidden="true"></div>
+          <div class="hero__stat">
+            <span class="hero__stat-num" data-target="120">0</span><span class="hero__stat-num">+</span>
+            <span class="hero__stat-label">Projects Delivered</span>
+          </div>
+          <div class="hero__stat-divider" aria-hidden="true"></div>
+          <div class="hero__stat">
+            <span class="hero__stat-num" data-target="40">0</span><span class="hero__stat-num">+</span>
+            <span class="hero__stat-label">Happy Clients</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__scroll-indicator" aria-hidden="true">
+        <div class="hero__scroll-line"></div>
+        <span>Scroll</span>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ MARQUEE ═══ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Brand Identity</span><span class="marquee__dot">✦</span>
+        <span>Marketing Collateral</span><span class="marquee__dot">✦</span>
+        <span>Visual Communication</span><span class="marquee__dot">✦</span>
+        <span>Typography</span><span class="marquee__dot">✦</span>
+        <span>Flyer Design</span><span class="marquee__dot">✦</span>
+        <span>Social Media Creatives</span><span class="marquee__dot">✦</span>
+        <span>Logo Design</span><span class="marquee__dot">✦</span>
+        <span>Print Design</span><span class="marquee__dot">✦</span>
+        <!-- duplicate for seamless loop -->
+        <span>Brand Identity</span><span class="marquee__dot">✦</span>
+        <span>Marketing Collateral</span><span class="marquee__dot">✦</span>
+        <span>Visual Communication</span><span class="marquee__dot">✦</span>
+        <span>Typography</span><span class="marquee__dot">✦</span>
+        <span>Flyer Design</span><span class="marquee__dot">✦</span>
+        <span>Social Media Creatives</span><span class="marquee__dot">✦</span>
+        <span>Logo Design</span><span class="marquee__dot">✦</span>
+        <span>Print Design</span><span class="marquee__dot">✦</span>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════ ABOUT ═══ -->
+    <section class="about section" id="about" aria-label="About Ahmed Khan">
+      <div class="container">
+        <div class="about__grid">
+          <div class="about__visual reveal-left">
+            <div class="about__img-wrapper">
+              <!-- Designer portrait placeholder with gold frame accent -->
+              <div class="about__img-placeholder" aria-label="Ahmed Khan, Graphic Designer">
+                <div class="about__img-inner">
+                  <svg width="80" height="80" viewBox="0 0 80 80" fill="none" aria-hidden="true">
+                    <circle cx="40" cy="30" r="18" fill="#C9A84C" opacity="0.3"/>
+                    <path d="M10 70c0-16.569 13.431-30 30-30s30 13.431 30 30" fill="#C9A84C" opacity="0.15"/>
+                    <circle cx="40" cy="30" r="16" stroke="#C9A84C" stroke-width="1.5" fill="none"/>
+                  </svg>
+                  <span>AK</span>
+                </div>
+              </div>
+              <div class="about__img-border" aria-hidden="true"></div>
+            </div>
+
+            <div class="about__badge">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                <path d="M10 2l2.09 5.26L18 8.27l-4 3.9.94 5.5L10 15l-4.94 2.67.94-5.5-4-3.9 5.91-.01L10 2z" fill="#C9A84C"/>
+              </svg>
+              <span>5+ Years Creating Impact</span>
+            </div>
+          </div>
+
+          <div class="about__content reveal-right">
+            <div class="section-label">About</div>
+            <h2 class="section-title">Design is a language.<br/><em>I make it fluent.</em></h2>
+            <p class="about__body">
+              I'm Ahmed Khan, a UAE-based graphic designer with over five years of experience turning
+              complex ideas into bold, memorable visuals. My work sits at the intersection of strategy
+              and aesthetics — I design not just to look good, but to <strong>communicate and convert</strong>.
+            </p>
+            <p class="about__body">
+              From establishing brand identities for startups to delivering high-impact marketing
+              campaigns for established companies across the Gulf region, I bring the same obsessive
+              attention to detail to every project — regardless of scale.
+            </p>
+
+            <div class="about__tags">
+              <span class="tag">Adobe Photoshop</span>
+              <span class="tag">Illustrator</span>
+              <span class="tag">InDesign</span>
+              <span class="tag">After Effects</span>
+              <span class="tag">Figma</span>
+              <span class="tag">CorelDRAW</span>
+            </div>
+
+            <a href="#contact" class="btn btn--primary btn--sm">Work With Me</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ FEATURED WORK ═══ -->
+    <section class="work section" id="work" aria-label="Portfolio projects">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <div class="section-label">Selected Work</div>
+          <h2 class="section-title">Projects that<br/><em>make an impression</em></h2>
+          <p class="section-sub">A curated selection from 120+ completed projects spanning brand identity, marketing design, and digital creatives.</p>
+        </div>
+
+        <!-- Filter tabs -->
+        <div class="work__filters reveal-up" role="tablist" aria-label="Filter projects by category">
+          <button class="work__filter active" data-filter="all" role="tab" aria-selected="true">All</button>
+          <button class="work__filter" data-filter="branding" role="tab" aria-selected="false">Branding</button>
+          <button class="work__filter" data-filter="marketing" role="tab" aria-selected="false">Marketing</button>
+          <button class="work__filter" data-filter="social" role="tab" aria-selected="false">Social Media</button>
+          <button class="work__filter" data-filter="print" role="tab" aria-selected="false">Print</button>
+        </div>
+
+        <!-- Project grid -->
+        <div class="work__grid" id="projectGrid">
+
+          <!-- Project 1 — Visa Services Campaign -->
+          <article class="project-card reveal-up" data-category="marketing" aria-label="Rukn Al Keswa — UAE Visa Services Campaign">
+            <div class="project-card__visual">
+              <div class="project-card__img project-card__img--visa">
+                <div class="project-card__mockup">
+                  <div class="mock-visa">
+                    <div class="mock-visa__header">
+                      <div class="mock-visa__logo-area">
+                        <div class="mock-logo-circle"></div>
+                        <div class="mock-logo-text">
+                          <span>RUKN AL KESWA</span>
+                          <span>Documents Clearing</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mock-visa__body">
+                      <div class="mock-visa__title">DUBAI</div>
+                      <div class="mock-visa__sub">VISA</div>
+                      <div class="mock-visa__tag">Your Journey Starts Here</div>
+                    </div>
+                    <div class="mock-visa__badges">
+                      <div class="mock-badge">Quick Process</div>
+                      <div class="mock-badge">Secure</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="project-card__overlay">
+                <button class="project-card__view-btn" data-project="visa" aria-label="View Rukn Al Keswa project details">
+                  View Project
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                    <path d="M2 7h10M7 2l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="project-card__info">
+              <div class="project-card__meta">
+                <span class="project-card__cat">Marketing Campaign</span>
+                <span class="project-card__year">2026</span>
+              </div>
+              <h3 class="project-card__title">Rukn Al Keswa — Dubai Visa Campaign</h3>
+              <p class="project-card__desc">Premium marketing collateral for a UAE visa clearing services company — bold typography, dark-gold palette, and authoritative visual language.</p>
+            </div>
+          </article>
+
+          <!-- Project 2 — Brand Identity -->
+          <article class="project-card reveal-up delay-1" data-category="branding" aria-label="Corporate Brand Identity project">
+            <div class="project-card__visual">
+              <div class="project-card__img project-card__img--brand">
+                <div class="project-card__mockup">
+                  <div class="mock-brand">
+                    <div class="mock-brand__symbol"></div>
+                    <div class="mock-brand__wordmark">NEXUS</div>
+                    <div class="mock-brand__tagline">Strategy & Design</div>
+                    <div class="mock-brand__cards">
+                      <div class="mock-card"></div>
+                      <div class="mock-card mock-card--offset"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="project-card__overlay">
+                <button class="project-card__view-btn" data-project="brand" aria-label="View brand identity project details">
+                  View Project
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                    <path d="M2 7h10M7 2l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="project-card__info">
+              <div class="project-card__meta">
+                <span class="project-card__cat">Brand Identity</span>
+                <span class="project-card__year">2025</span>
+              </div>
+              <h3 class="project-card__title">Nexus — Corporate Brand Identity</h3>
+              <p class="project-card__desc">Full brand identity system including logo, business cards, letterhead, and brand guidelines for a consulting firm.</p>
+            </div>
+          </article>
+
+          <!-- Project 3 — Social Media -->
+          <article class="project-card reveal-up delay-2" data-category="social" aria-label="Social media design system">
+            <div class="project-card__visual">
+              <div class="project-card__img project-card__img--social">
+                <div class="project-card__mockup">
+                  <div class="mock-social">
+                    <div class="mock-social__post mock-social__post--1">
+                      <div class="mock-post-label">NEW</div>
+                      <div class="mock-post-text">LAUNCH</div>
+                    </div>
+                    <div class="mock-social__post mock-social__post--2">
+                      <div class="mock-post-bar"></div>
+                      <div class="mock-post-bar mock-post-bar--short"></div>
+                    </div>
+                    <div class="mock-social__post mock-social__post--3">
+                      <div class="mock-post-circle"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="project-card__overlay">
+                <button class="project-card__view-btn" data-project="social" aria-label="View social media design project">
+                  View Project
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                    <path d="M2 7h10M7 2l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="project-card__info">
+              <div class="project-card__meta">
+                <span class="project-card__cat">Social Media</span>
+                <span class="project-card__year">2025</span>
+              </div>
+              <h3 class="project-card__title">E-commerce Launch — Social Kit</h3>
+              <p class="project-card__desc">Cohesive 30-piece social media template system for a product launch campaign across Instagram, Facebook, and LinkedIn.</p>
+            </div>
+          </article>
+
+          <!-- Project 4 — Print Design -->
+          <article class="project-card reveal-up" data-category="print" aria-label="Print catalog design">
+            <div class="project-card__visual">
+              <div class="project-card__img project-card__img--print">
+                <div class="project-card__mockup">
+                  <div class="mock-print">
+                    <div class="mock-print__cover">
+                      <div class="mock-print__lines">
+                        <div class="mock-print__line mock-print__line--wide"></div>
+                        <div class="mock-print__line mock-print__line--medium"></div>
+                        <div class="mock-print__line mock-print__line--short"></div>
+                      </div>
+                      <div class="mock-print__accent"></div>
+                    </div>
+                    <div class="mock-print__shadow"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="project-card__overlay">
+                <button class="project-card__view-btn" data-project="print" aria-label="View print design project">
+                  View Project
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                    <path d="M2 7h10M7 2l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="project-card__info">
+              <div class="project-card__meta">
+                <span class="project-card__cat">Print Design</span>
+                <span class="project-card__year">2025</span>
+              </div>
+              <h3 class="project-card__title">Luxury Real Estate — Brochure</h3>
+              <p class="project-card__desc">High-end property brochure with editorial-style layout, premium typography, and architectural photography composition.</p>
+            </div>
+          </article>
+
+          <!-- Project 5 — Branding -->
+          <article class="project-card reveal-up delay-1" data-category="branding" aria-label="Restaurant brand identity">
+            <div class="project-card__visual">
+              <div class="project-card__img project-card__img--resto">
+                <div class="project-card__mockup">
+                  <div class="mock-resto">
+                    <div class="mock-resto__emblem">
+                      <svg width="48" height="48" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+                        <circle cx="24" cy="24" r="20" stroke="#C9A84C" stroke-width="1.5"/>
+                        <path d="M24 12v24M12 24h24" stroke="#C9A84C" stroke-width="1"/>
+                        <circle cx="24" cy="24" r="6" fill="#C9A84C" opacity="0.4"/>
+                      </svg>
+                    </div>
+                    <div class="mock-resto__name">AL DIWAN</div>
+                    <div class="mock-resto__type">Fine Dining</div>
+                  </div>
+                </div>
+              </div>
+              <div class="project-card__overlay">
+                <button class="project-card__view-btn" data-project="resto" aria-label="View restaurant branding project">
+                  View Project
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                    <path d="M2 7h10M7 2l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="project-card__info">
+              <div class="project-card__meta">
+                <span class="project-card__cat">Brand Identity</span>
+                <span class="project-card__year">2024</span>
+              </div>
+              <h3 class="project-card__title">Al Diwan — Fine Dining Brand</h3>
+              <p class="project-card__desc">Complete visual identity for a luxury Arabic fine-dining restaurant — merging classical Arabic aesthetics with contemporary elegance.</p>
+            </div>
+          </article>
+
+          <!-- Project 6 — Marketing -->
+          <article class="project-card reveal-up delay-2" data-category="marketing" aria-label="Real estate marketing campaign">
+            <div class="project-card__visual">
+              <div class="project-card__img project-card__img--realestate">
+                <div class="project-card__mockup">
+                  <div class="mock-realestate">
+                    <div class="mock-re__skyline" aria-hidden="true">
+                      <div class="mock-re__building mock-re__b1"></div>
+                      <div class="mock-re__building mock-re__b2"></div>
+                      <div class="mock-re__building mock-re__b3"></div>
+                    </div>
+                    <div class="mock-re__label">PREMIUM LIVING</div>
+                    <div class="mock-re__sublabel">Dubai Marina</div>
+                  </div>
+                </div>
+              </div>
+              <div class="project-card__overlay">
+                <button class="project-card__view-btn" data-project="realestate" aria-label="View real estate project">
+                  View Project
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                    <path d="M2 7h10M7 2l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="project-card__info">
+              <div class="project-card__meta">
+                <span class="project-card__cat">Marketing</span>
+                <span class="project-card__year">2024</span>
+              </div>
+              <h3 class="project-card__title">Dubai Marina — Real Estate Campaign</h3>
+              <p class="project-card__desc">Multi-format marketing campaign for a luxury Dubai Marina development — billboard, digital banners, and print assets.</p>
+            </div>
+          </article>
+
+        </div><!-- /work__grid -->
+
+        <div class="work__cta reveal-up">
+          <a href="https://www.behance.net/ahmedkhandesign" target="_blank" rel="noopener noreferrer" class="btn btn--ghost">
+            View Full Portfolio on Behance
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+              <path d="M10 4H4v6M10 4L4 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ SERVICES ═══ -->
+    <section class="services section" id="services" aria-label="Services offered">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <div class="section-label">Services</div>
+          <h2 class="section-title">What I bring<br/><em>to the table</em></h2>
+        </div>
+
+        <div class="services__grid">
+          <div class="service-card reveal-up">
+            <div class="service-card__num">01</div>
+            <div class="service-card__icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                <path d="M16 4l4 8 8 1-6 6 1.5 8L16 23l-7.5 4 1.5-8L4 13l8-1L16 4z" stroke="#C9A84C" stroke-width="1.5" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3 class="service-card__title">Brand Identity</h3>
+            <p class="service-card__desc">Logo systems, color palettes, typography, and brand guidelines that create a consistent, recognizable identity across every touchpoint.</p>
+            <ul class="service-card__list">
+              <li>Logo Design & Variations</li>
+              <li>Brand Style Guides</li>
+              <li>Stationery Design</li>
+              <li>Brand Strategy</li>
+            </ul>
+          </div>
+
+          <div class="service-card reveal-up delay-1">
+            <div class="service-card__num">02</div>
+            <div class="service-card__icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                <rect x="4" y="6" width="24" height="18" rx="2" stroke="#C9A84C" stroke-width="1.5"/>
+                <path d="M4 11h24" stroke="#C9A84C" stroke-width="1.5"/>
+                <path d="M8 15h8M8 18h6" stroke="#C9A84C" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="service-card__title">Marketing Collateral</h3>
+            <p class="service-card__desc">High-impact marketing materials — from brochures and flyers to large-format banners — designed to attract, engage, and convert.</p>
+            <ul class="service-card__list">
+              <li>Flyers & Posters</li>
+              <li>Brochures & Catalogues</li>
+              <li>Banners & Signage</li>
+              <li>Promotional Materials</li>
+            </ul>
+          </div>
+
+          <div class="service-card reveal-up delay-2">
+            <div class="service-card__num">03</div>
+            <div class="service-card__icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                <rect x="6" y="4" width="12" height="12" rx="2" stroke="#C9A84C" stroke-width="1.5"/>
+                <rect x="14" y="16" width="12" height="12" rx="2" stroke="#C9A84C" stroke-width="1.5"/>
+                <rect x="6" y="16" width="7" height="7" rx="1" stroke="#C9A84C" stroke-width="1.5"/>
+              </svg>
+            </div>
+            <h3 class="service-card__title">Social Media Design</h3>
+            <p class="service-card__desc">Scroll-stopping social media creatives tailored for Instagram, Facebook, LinkedIn, and beyond — designed for engagement and brand recall.</p>
+            <ul class="service-card__list">
+              <li>Post & Story Templates</li>
+              <li>Campaign Kits</li>
+              <li>Profile Branding</li>
+              <li>Ad Creatives</li>
+            </ul>
+          </div>
+
+          <div class="service-card reveal-up delay-3">
+            <div class="service-card__num">04</div>
+            <div class="service-card__icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                <path d="M8 26V8l8-4 8 4v18" stroke="#C9A84C" stroke-width="1.5" stroke-linejoin="round"/>
+                <path d="M8 14h16" stroke="#C9A84C" stroke-width="1.5"/>
+                <rect x="13" y="18" width="6" height="8" rx="1" stroke="#C9A84C" stroke-width="1.5"/>
+              </svg>
+            </div>
+            <h3 class="service-card__title">Print & Publication</h3>
+            <p class="service-card__desc">Editorial-quality print design — annual reports, magazines, and luxury publications that stand out in a digital-first world.</p>
+            <ul class="service-card__list">
+              <li>Annual Reports</li>
+              <li>Magazines & Lookbooks</li>
+              <li>Packaging Design</li>
+              <li>Menu Design</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ PROCESS ═══ -->
+    <section class="process section" id="process" aria-label="Design process">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <div class="section-label">Process</div>
+          <h2 class="section-title">How great design<br/><em>gets made</em></h2>
+        </div>
+
+        <div class="process__steps">
+          <div class="process__step reveal-left">
+            <div class="process__step-num" aria-hidden="true">01</div>
+            <div class="process__step-content">
+              <h3>Discover</h3>
+              <p>Deep-dive into your brand, audience, competitors, and goals. I ask the questions others skip to uncover what makes your business unique.</p>
+            </div>
+            <div class="process__step-line" aria-hidden="true"></div>
+          </div>
+          <div class="process__step reveal-left delay-1">
+            <div class="process__step-num" aria-hidden="true">02</div>
+            <div class="process__step-content">
+              <h3>Define</h3>
+              <p>Translate insights into a clear creative brief — visual direction, tone, reference moodboards, and measurable success criteria.</p>
+            </div>
+            <div class="process__step-line" aria-hidden="true"></div>
+          </div>
+          <div class="process__step reveal-left delay-2">
+            <div class="process__step-num" aria-hidden="true">03</div>
+            <div class="process__step-content">
+              <h3>Design</h3>
+              <p>Craft multiple directions, explore ideas with intentionality, and iterate to find the solution that's both beautiful and functional.</p>
+            </div>
+            <div class="process__step-line" aria-hidden="true"></div>
+          </div>
+          <div class="process__step reveal-left delay-3">
+            <div class="process__step-num" aria-hidden="true">04</div>
+            <div class="process__step-content">
+              <h3>Deliver</h3>
+              <p>Present polished, print-ready or screen-ready files with all formats, complete brand documentation, and implementation support.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ TESTIMONIALS ═══ -->
+    <section class="testimonials section" id="testimonials" aria-label="Client testimonials">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <div class="section-label">Testimonials</div>
+          <h2 class="section-title">Clients who<br/><em>trust the work</em></h2>
+        </div>
+
+        <div class="testimonials__track-wrapper">
+          <div class="testimonials__track" id="testimonialsTrack">
+            <blockquote class="testimonial-card">
+              <div class="testimonial-card__stars" aria-label="5 stars">★★★★★</div>
+              <p class="testimonial-card__quote">"Ahmed transformed our visa services marketing completely. The campaign materials he created elevated our brand image and brought in a measurable increase in enquiries. Exceptional attention to detail and professionalism."</p>
+              <footer class="testimonial-card__author">
+                <div class="testimonial-card__avatar" aria-hidden="true">RK</div>
+                <div>
+                  <cite class="testimonial-card__name">Rashid K.</cite>
+                  <span class="testimonial-card__role">CEO, Documents Clearing Services</span>
+                </div>
+              </footer>
+            </blockquote>
+
+            <blockquote class="testimonial-card">
+              <div class="testimonial-card__stars" aria-label="5 stars">★★★★★</div>
+              <p class="testimonial-card__quote">"The brand identity Ahmed delivered for our restaurant was nothing short of spectacular. He truly understood our vision and translated it into visuals that feel both contemporary and rooted in our culture."</p>
+              <footer class="testimonial-card__author">
+                <div class="testimonial-card__avatar" aria-hidden="true">MA</div>
+                <div>
+                  <cite class="testimonial-card__name">Mohammed A.</cite>
+                  <span class="testimonial-card__role">Owner, Al Diwan Restaurant</span>
+                </div>
+              </footer>
+            </blockquote>
+
+            <blockquote class="testimonial-card">
+              <div class="testimonial-card__stars" aria-label="5 stars">★★★★★</div>
+              <p class="testimonial-card__quote">"Fast, talented, and communicative — the trifecta you rarely find. Our social media engagement went up significantly after Ahmed redesigned our content templates. Highly recommend for any UAE business."</p>
+              <footer class="testimonial-card__author">
+                <div class="testimonial-card__avatar" aria-hidden="true">SL</div>
+                <div>
+                  <cite class="testimonial-card__name">Sara L.</cite>
+                  <span class="testimonial-card__role">Marketing Manager, E-commerce Brand</span>
+                </div>
+              </footer>
+            </blockquote>
+
+            <blockquote class="testimonial-card">
+              <div class="testimonial-card__stars" aria-label="5 stars">★★★★★</div>
+              <p class="testimonial-card__quote">"Ahmed's real estate campaign materials gave our property launch the premium feel it deserved. Every design element felt intentional and polished. Will definitely work with him again."</p>
+              <footer class="testimonial-card__author">
+                <div class="testimonial-card__avatar" aria-hidden="true">TH</div>
+                <div>
+                  <cite class="testimonial-card__name">Tariq H.</cite>
+                  <span class="testimonial-card__role">Director, Property Development</span>
+                </div>
+              </footer>
+            </blockquote>
+          </div>
+
+          <div class="testimonials__nav" aria-label="Testimonial navigation">
+            <button class="testimonials__btn" id="prevTestimonial" aria-label="Previous testimonial">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                <path d="M12 4l-6 6 6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <div class="testimonials__dots" id="testimonialDots" role="tablist" aria-label="Select testimonial"></div>
+            <button class="testimonials__btn" id="nextTestimonial" aria-label="Next testimonial">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                <path d="M8 4l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ CONTACT ═══ -->
+    <section class="contact section" id="contact" aria-label="Contact Ahmed Khan">
+      <div class="container">
+        <div class="contact__grid">
+          <div class="contact__info reveal-left">
+            <div class="section-label">Contact</div>
+            <h2 class="section-title">Let's create<br/><em>something remarkable</em></h2>
+            <p class="contact__body">Have a project in mind? I'd love to hear about it. Let's talk about how we can turn your vision into something that makes people stop and stare.</p>
+
+            <ul class="contact__details">
+              <li class="contact__detail">
+                <span class="contact__detail-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                    <path d="M9 1C5.686 1 3 3.686 3 7c0 4.5 6 10 6 10s6-5.5 6-10c0-3.314-2.686-6-6-6zm0 8a2 2 0 110-4 2 2 0 010 4z" stroke="#C9A84C" stroke-width="1.2"/>
+                  </svg>
+                </span>
+                <div>
+                  <span class="contact__detail-label">Location</span>
+                  <span class="contact__detail-value">Dubai, UAE</span>
+                </div>
+              </li>
+              <li class="contact__detail">
+                <span class="contact__detail-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                    <rect x="2" y="4" width="14" height="10" rx="2" stroke="#C9A84C" stroke-width="1.2"/>
+                    <path d="M2 6l7 5 7-5" stroke="#C9A84C" stroke-width="1.2"/>
+                  </svg>
+                </span>
+                <div>
+                  <span class="contact__detail-label">Email</span>
+                  <a href="mailto:hello@ahmedkhan.design" class="contact__detail-value contact__link">hello@ahmedkhan.design</a>
+                </div>
+              </li>
+              <li class="contact__detail">
+                <span class="contact__detail-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                    <path d="M3 3h3l1.5 4L6 8.5s1 2 3.5 3.5L11 10l4 1.5V15a1 1 0 01-1 1C5 15 2 6 2 4a1 1 0 011-1z" stroke="#C9A84C" stroke-width="1.2"/>
+                  </svg>
+                </span>
+                <div>
+                  <span class="contact__detail-label">Phone / WhatsApp</span>
+                  <a href="tel:+971561271450" class="contact__detail-value contact__link">+971 56-127-1450</a>
+                </div>
+              </li>
+              <li class="contact__detail">
+                <span class="contact__detail-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                    <circle cx="9" cy="9" r="7" stroke="#C9A84C" stroke-width="1.2"/>
+                    <path d="M9 4v5l3 3" stroke="#C9A84C" stroke-width="1.2" stroke-linecap="round"/>
+                  </svg>
+                </span>
+                <div>
+                  <span class="contact__detail-label">Response Time</span>
+                  <span class="contact__detail-value">Within 24 hours</span>
+                </div>
+              </li>
+            </ul>
+
+            <div class="contact__social">
+              <a href="https://www.behance.net/ahmedkhandesign" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Behance profile">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path d="M7.8 9.4c.8-.3 1.4-1 1.4-2C9.2 5.6 7.9 5 6.3 5H2v10h4.5c1.7 0 3.2-.7 3.2-2.6 0-1.2-.6-2.1-1.9-2.4zm-3.4-2.8h1.8c.7 0 1.3.2 1.3.9 0 .8-.6 1-1.3 1H4.4V6.6zm2 6.8H4.4v-2.3h2c.9 0 1.5.3 1.5 1.2 0 .8-.6 1.1-1.5 1.1zM13.3 7c-2.1 0-3.7 1.5-3.7 3.7 0 2.3 1.5 3.7 3.7 3.7 1.8 0 3-.9 3.5-2.5h-1.6c-.2.7-.8 1-1.5 1-.9 0-1.7-.7-1.7-1.7h5c.3-2.3-1-4.2-3.7-4.2zm-1.7 3c.1-.9.7-1.5 1.7-1.5.9 0 1.5.6 1.5 1.5h-3.2zm-.2-4.5h4.1V7h-4.1V5.5z"/>
+                </svg>
+              </a>
+              <a href="#" class="social-link" aria-label="Instagram profile">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                  <rect x="3" y="3" width="14" height="14" rx="4" stroke="currentColor" stroke-width="1.5"/>
+                  <circle cx="10" cy="10" r="3.5" stroke="currentColor" stroke-width="1.5"/>
+                  <circle cx="14.5" cy="5.5" r="1" fill="currentColor"/>
+                </svg>
+              </a>
+              <a href="#" class="social-link" aria-label="LinkedIn profile">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path d="M4.5 6.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM3 8h3v9H3V8zm5 0h2.9v1.2c.4-.7 1.4-1.5 2.9-1.5 3.1 0 3.7 2 3.7 4.7V17h-3v-4c0-1 0-2.3-1.4-2.3s-1.6 1.1-1.6 2.3v4H8V8z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="contact__form-wrapper reveal-right">
+            <form class="contact__form" id="contactForm" novalidate aria-label="Contact form">
+              <div class="form-group">
+                <label for="contactName" class="form-label">Full Name <span aria-hidden="true">*</span></label>
+                <input type="text" id="contactName" name="name" class="form-input" placeholder="Your name" required autocomplete="name" />
+                <span class="form-error" role="alert"></span>
+              </div>
+              <div class="form-group">
+                <label for="contactEmail" class="form-label">Email Address <span aria-hidden="true">*</span></label>
+                <input type="email" id="contactEmail" name="email" class="form-input" placeholder="your@email.com" required autocomplete="email" />
+                <span class="form-error" role="alert"></span>
+              </div>
+              <div class="form-group">
+                <label for="contactService" class="form-label">Service Needed</label>
+                <select id="contactService" name="service" class="form-input form-select">
+                  <option value="">Select a service…</option>
+                  <option value="brand-identity">Brand Identity</option>
+                  <option value="marketing">Marketing Collateral</option>
+                  <option value="social-media">Social Media Design</option>
+                  <option value="print">Print & Publication</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="contactMessage" class="form-label">Project Brief <span aria-hidden="true">*</span></label>
+                <textarea id="contactMessage" name="message" class="form-input form-textarea" rows="5" placeholder="Tell me about your project, timeline, and budget…" required></textarea>
+                <span class="form-error" role="alert"></span>
+              </div>
+              <button type="submit" class="btn btn--primary btn--full" id="formSubmitBtn">
+                <span class="btn__text">Send Message</span>
+                <svg class="btn__icon" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M3 8h10M8 3l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+              <p class="form-note">* Required fields. I'll respond within 24 hours.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ═══════════════════════════════════════ FOOTER ═══ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <span class="footer__logo">AK</span>
+          <p class="footer__tagline">Design with purpose.<br/>Execute with precision.</p>
+        </div>
+        <nav class="footer__nav" aria-label="Footer navigation">
+          <a href="#about">About</a>
+          <a href="#work">Work</a>
+          <a href="#services">Services</a>
+          <a href="#process">Process</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="footer__social">
+          <a href="https://www.behance.net/ahmedkhandesign" target="_blank" rel="noopener noreferrer" aria-label="Behance">Behance</a>
+          <a href="#" aria-label="Instagram">Instagram</a>
+          <a href="#" aria-label="LinkedIn">LinkedIn</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; <span id="currentYear">2026</span> Ahmed Khan. All rights reserved.</span>
+        <span>Dubai, UAE</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top" title="Back to top">
+    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+      <path d="M9 14V4M4 9l5-5 5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button>
+
+  <!-- ═══════════════════════════════════════ PROJECT MODAL ═══ -->
+  <div class="modal" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-hidden="true">
+    <div class="modal__backdrop" id="modalBackdrop"></div>
+    <div class="modal__container">
+      <button class="modal__close" id="modalClose" aria-label="Close project modal">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+          <path d="M4 4l12 12M16 4L4 16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </button>
+      <div class="modal__content" id="modalContent"></div>
+    </div>
+  </div>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>
