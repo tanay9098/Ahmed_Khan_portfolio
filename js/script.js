@@ -230,6 +230,7 @@ function initProjectFilter() {
 /* ── PROJECT MODAL DATA ─────────────────────────────────────── */
 const projectData = {
   zyntrix: {
+    permalink: 'https://www.behance.net/gallery/247238973/GRAPHIC-DESIGN-PORTFOLIO-2026/modules/1442208009',
     title: 'ZYNTRIX — Brand Identity Design',
     cat: 'Brand Identity · 2026',
     accentColor: '#E5E5E5',
@@ -247,6 +248,7 @@ const projectData = {
     },
   },
   gryd: {
+    permalink: 'https://www.behance.net/gallery/247238973/GRAPHIC-DESIGN-PORTFOLIO-2026',
     title: 'GRYD — Tech Brand Identity',
     cat: 'Brand Identity · 2026',
     accentColor: '#C81F2A',
@@ -264,6 +266,7 @@ const projectData = {
     },
   },
   vektor: {
+    permalink: 'https://www.behance.net/gallery/247238973/GRAPHIC-DESIGN-PORTFOLIO-2026/modules/1442207973',
     title: 'Vektor Core — Digital Brand Identity',
     cat: 'Brand Identity · 2026',
     accentColor: '#FF6B00',
@@ -281,6 +284,7 @@ const projectData = {
     },
   },
   peanuts: {
+    permalink: 'https://www.behance.net/gallery/247238973/GRAPHIC-DESIGN-PORTFOLIO-2026/modules/1442207977',
     title: 'Spicy Masala Peanuts — Packaging Design',
     cat: 'Packaging Design · 2026',
     accentColor: '#F63255',
@@ -299,6 +303,7 @@ const projectData = {
     },
   },
   porsche: {
+    permalink: 'https://www.behance.net/gallery/247238973/GRAPHIC-DESIGN-PORTFOLIO-2026/modules/1442207999',
     title: 'Porsche — Social Media Campaign',
     cat: 'Social Media Design · 2026',
     accentColor: '#C89B00',
@@ -317,6 +322,7 @@ const projectData = {
     },
   },
   soundx: {
+    permalink: 'https://www.behance.net/gallery/247238973/GRAPHIC-DESIGN-PORTFOLIO-2026/modules/1442207991',
     title: 'SoundX — Wireless Headphones Carousel',
     cat: 'Social Media Design · 2026',
     accentColor: '#FF1E1E',
@@ -336,6 +342,7 @@ const projectData = {
     },
   },
   glownest: {
+    permalink: 'https://www.behance.net/gallery/247238973/GRAPHIC-DESIGN-PORTFOLIO-2026/modules/1442207979',
     title: 'GlowNest Organics — Vitamin C Serum',
     cat: 'Social Media Design · 2026',
     accentColor: '#D4AF3F',
@@ -355,6 +362,7 @@ const projectData = {
     },
   },
   munchies: {
+    permalink: 'https://www.behance.net/gallery/247238973/GRAPHIC-DESIGN-PORTFOLIO-2026/modules/1442207987',
     title: 'Munch Munchies Elite — Packaging',
     cat: 'Packaging Design · 2026',
     accentColor: '#C9A84C',
@@ -374,6 +382,7 @@ const projectData = {
     },
   },
   guitarist: {
+    permalink: 'https://www.behance.net/gallery/247238973/GRAPHIC-DESIGN-PORTFOLIO-2026/modules/1442207989',
     title: 'The Guitarist — Character Design',
     cat: 'Illustration & Character Design · 2026',
     accentColor: '#F2601A',
@@ -428,7 +437,7 @@ function initProjectModal() {
         <div class="modal__meta">${detailsHTML}</div>
       </div>
       <div class="modal__behance-link">
-        <a href="https://www.behance.net/gallery/247238973/GRAPHIC-DESIGN-PORTFOLIO-2026" target="_blank" rel="noopener noreferrer">
+        <a href="${data.permalink}" target="_blank" rel="noopener noreferrer">
           View full project on Behance ↗
         </a>
       </div>`;
