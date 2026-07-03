@@ -852,6 +852,13 @@ button { background: none; border: none; cursor: none; font-family: inherit; }
 
 .project-card:hover .project-card__img { transform: scale(1.04); }
 
+.project-card__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 /* Unique card backgrounds */
 .project-card__img--zyntrix    { background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #0a0a0a 100%); }
 .project-card__img--gryd       { background: linear-gradient(135deg, #0d0000 0%, #1f0000 50%, #0d0000 100%); }
